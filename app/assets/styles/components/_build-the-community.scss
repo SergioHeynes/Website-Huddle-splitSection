@@ -1,22 +1,40 @@
 .build-the-community {
-    padding: 0 6rem 25rem 8rem;
-    text-align: center;
+  padding: 0 6rem 25rem 8rem;
+  text-align: center;
 
-    &__title {
-        font-size: 5.2rem;
-        font-weight: 700;
-        margin-bottom: 5rem;
+  @media only screen and (max-width: $bp-tab-port) {
+    padding: 0 5rem 18rem 6rem;
+  }
+
+  @media only screen and (max-width: $bp-phone) {
+    padding: 0 4rem 10rem 4rem;
+  }
+
+  &__title {
+    font-size: 5.2rem;
+    font-weight: 700;
+    margin-bottom: 5rem;
+  }
+
+  &__paragraph {
+    font-size: 2.1rem;
+    color:$color-grey;
+    width: 54%;
+    margin:  0 auto;
+    margin-bottom: 4.7rem;
+
+    @media only screen and (max-width: $bp-tab-land) {
+      width: auto;
     }
 
-    &__paragraph {
-        font-size: 2.1rem;
-        color:$color-grey;
-        width: 60%;
-        margin:  0 auto;
-        margin-bottom: 4.7rem;
-    }
+    // @media only screen and (max-width: $bp-phone) {
+    //   width: 71%;
+    // }
 
-    &__illustration {
-        display: block;
-    }
+  }
+
+  &__illustration {
+    display: block;
+    width: 100%;
+  }
 }

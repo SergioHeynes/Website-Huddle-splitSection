@@ -4,11 +4,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media only screen and (max-width: $bp-phone) {
+    padding: 4rem 4rem 12rem 4rem;
+  }
   
   &__logo {
+
     @media only screen and (max-width: $bp-phone) {
       width: 42%;
     }
+
   }
 
   &__btn {
@@ -17,7 +23,7 @@
     font-size: 1.7rem;
     font-family: inherit;
     border: 1px solid $color-pink;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 1.2rem 3.3rem;
 
     @media only screen and (max-width: $bp-phone) {

@@ -10,9 +10,12 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
   @media only screen and (max-width: 37.5em) {
     html {
-      font-size: 37.5%; } }
+      font-size: 31.25%; } }
 
 body {
   line-height: 1.5;
@@ -23,13 +26,30 @@ body {
 .btn {
   display: inline-block;
   margin-bottom: 12rem;
-  background-color: #FF52BF; }
+  font-weight: bold;
+  text-decoration: none;
+  color: #FFF;
+  padding: 3rem 10rem;
+  border-radius: 5px;
+  font-size: 1.7rem;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff87cf+0,ff66c4+45,ff52bf+100 */
+  background: #ff87cf;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ff87cf 0%, #ff66c4 45%, #ff52bf 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff87cf', endColorstr='#ff52bf',GradientType=0 );
+  /* IE6-9 */ }
 
 .header {
   padding: 8rem 6rem 25rem 8rem;
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      padding: 4rem 4rem 12rem 4rem; } }
   @media only screen and (max-width: 37.5em) {
     .header__logo {
       width: 42%; } }
@@ -39,7 +59,7 @@ body {
     font-size: 1.7rem;
     font-family: inherit;
     border: 1px solid #FF52BF;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 1.2rem 3.3rem; }
     @media only screen and (max-width: 37.5em) {
       .header__btn {
@@ -48,6 +68,12 @@ body {
 .build-the-community {
   padding: 0 6rem 25rem 8rem;
   text-align: center; }
+  @media only screen and (max-width: 56.25em) {
+    .build-the-community {
+      padding: 0 5rem 18rem 6rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .build-the-community {
+      padding: 0 4rem 10rem 4rem; } }
   .build-the-community__title {
     font-size: 5.2rem;
     font-weight: 700;
@@ -55,8 +81,12 @@ body {
   .build-the-community__paragraph {
     font-size: 2.1rem;
     color: #808D99;
-    width: 60%;
+    width: 54%;
     margin: 0 auto;
     margin-bottom: 4.7rem; }
+    @media only screen and (max-width: 75em) {
+      .build-the-community__paragraph {
+        width: auto; } }
   .build-the-community__illustration {
-    display: block; }
+    display: block;
+    width: 100%; }

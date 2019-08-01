@@ -1,5 +1,16 @@
 .btn {
     display: inline-block;
     margin-bottom: 12rem;
-    background-color: $color-pink;
+    font-weight: bold;
+    text-decoration: none;
+    color: $color-white;
+    padding: 3rem 10rem;
+    border-radius: 5px;
+    font-size: 1.7rem;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff87cf+0,ff66c4+45,ff52bf+100 */
+    background: #ff87cf; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ff87cf 0%, #ff66c4 45%, #ff52bf 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ff87cf 0%,#ff66c4 45%,#ff52bf 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ff87cf 0%,#ff66c4 45%,#ff52bf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff87cf', endColorstr='#ff52bf',GradientType=0 ); /* IE6-9 */
 }
