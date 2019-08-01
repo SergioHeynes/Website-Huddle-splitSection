@@ -1,5 +1,5 @@
 .benefits {
-    padding: 0 6rem 25rem 8rem;
+    padding: 0 6rem 31rem 8rem;
 
     display: flex;
     align-items: center;
@@ -12,6 +12,7 @@
 
     @media only screen and (max-width: $bp-phone) {
         padding: 10rem 4rem 10rem 4rem;
+        margin-bottom: 12rem;
         background-color: $color-lightBlue;
     }
 
