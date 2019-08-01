@@ -27,9 +27,10 @@
       width: auto;
     }
 
-    // @media only screen and (max-width: $bp-phone) {
-    //   width: 71%;
-    // }
+    @media only screen and (max-width: $bp-phone) {
+      width: 71%;
+      margin-bottom: 8.7rem;
+    }
 
   }
 

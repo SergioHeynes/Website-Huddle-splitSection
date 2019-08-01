@@ -1,0 +1,56 @@
+.benefits {
+    padding: 0 6rem 25rem 8rem;
+
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-tab-port) {
+        padding: 0 5rem 18rem 6rem;
+
+        flex-direction: column;
+    }
+
+    @media only screen and (max-width: $bp-phone) {
+        padding: 10rem 4rem 10rem 4rem;
+        background-color: $color-lightBlue;
+    }
+
+
+    &__group {
+        flex: 50%;
+        margin-right: 8rem;
+    }
+
+    &__illustration {
+        width: 50%;
+        height: auto;
+        
+        flex: 50%;
+
+        @media only screen and (max-width: $bp-tab-port) {
+            width: 75%;
+
+            order: -1;
+            margin-bottom: 14rem;
+        }
+
+        @media only screen and (max-width: $bp-phone) {
+            width: 90%;
+        }
+    }
+
+    &__benefit-detail {
+        margin-bottom: 3.5rem;
+    }
+
+    &__title {
+        font-size: 3.2rem;
+        font-weight: 700;
+    }
+
+    &__paragraph {
+        font-size: 2rem;
+        color: $color-grey;
+    }
+
+}

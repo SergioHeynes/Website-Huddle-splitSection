@@ -13,4 +13,8 @@
     background: -webkit-linear-gradient(top,  #ff87cf 0%,#ff66c4 45%,#ff52bf 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  #ff87cf 0%,#ff66c4 45%,#ff52bf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff87cf', endColorstr='#ff52bf',GradientType=0 ); /* IE6-9 */
+
+    @media only screen and (max-width: $bp-phone) {
+        display: none;
+    }
 }
