@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-phone) {
+        font-size: 37.5%;
+    }
+}
+
+body {
+    line-height: 1.5;
+    font-family: $font-body;
+    max-width: 144rem;
+    margin: 0 auto;
+}
+

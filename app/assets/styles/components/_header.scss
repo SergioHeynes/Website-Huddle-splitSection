@@ -1,0 +1,28 @@
+.header {
+  padding: 8rem 6rem 25rem 8rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  &__logo {
+    @media only screen and (max-width: $bp-phone) {
+      width: 42%;
+    }
+  }
+
+  &__btn {
+    text-decoration: none;
+    color: $color-pink;
+    font-size: 1.7rem;
+    font-family: inherit;
+    border: 1px solid $color-pink;
+    border-radius: 3px;
+    padding: 1.2rem 3.3rem;
+
+    @media only screen and (max-width: $bp-phone) {
+      padding: 1rem 2.9rem;
+    }
+
+  }
+}
