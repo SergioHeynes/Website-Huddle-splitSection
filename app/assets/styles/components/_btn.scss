@@ -1,18 +1,24 @@
 .btn {
-    display: inline-block;
-    margin-bottom: 12rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: $color-white;
-    padding: 3rem 10rem;
-    border-radius: 5px;
-    font-size: 1.7rem;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff87cf+0,ff66c4+45,ff52bf+100 */
-    background: #ff87cf; /* Old browsers */
-    background: -moz-linear-gradient(top,  #ff87cf 0%, #ff66c4 45%, #ff52bf 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #ff87cf 0%,#ff66c4 45%,#ff52bf 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #ff87cf 0%,#ff66c4 45%,#ff52bf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff87cf', endColorstr='#ff52bf',GradientType=0 ); /* IE6-9 */
+
+    &,
+    &__visited, 
+    &__link {
+        display: inline-block;
+        margin-bottom: 12rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: $color-white;
+        padding: 3rem 10rem;
+        border-radius: 5px;
+        font-size: 1.7rem;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff87cf+0,ff66c4+45,ff52bf+100 */
+        background: #ff87cf; /* Old browsers */
+        background: -moz-linear-gradient(top,  #ff87cf 0%, #ff66c4 45%, #ff52bf 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #ff87cf 0%,#ff66c4 45%,#ff52bf 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #ff87cf 0%,#ff66c4 45%,#ff52bf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff87cf', endColorstr='#ff52bf',GradientType=0 ); /* IE6-9 */
+    }
+    
 
     &--hidden-phone {
         @media only screen and (max-width: $bp-phone) {
@@ -21,15 +27,25 @@
     }
 
     &--small {
-        padding: 1.2rem 2rem 1.5rem;
+        padding: 0;
+        padding: .7rem 1.8rem;
         border: none;
-        border-radius: 0 5px 5px 0;
+        border-radius: 0 0 0 0;
         display: inline-block;
         margin: 0;
         margin-left: -7px;
         font-weight: bold;
         font-size: 2.2rem;
-        width: 18%;
+
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        // @media only screen and (max-width: $bp-tab-land) {
+        //     padding: .4rem 0 .9rem 1.3rem;
+        // } 
     }
     
 }

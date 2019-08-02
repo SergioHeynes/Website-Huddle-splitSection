@@ -1,5 +1,34 @@
 .attribution { 
-    font-size: 11px; text-align: center; 
+    text-align: center; 
+    color: $color-white;
+
+    justify-self: center;
+    flex: 1;
+    margin-top: 8rem;
+
+    @media only screen and (max-width: $bp-phone) {
+        margin-top: 12rem;
+    }
+
+    &__copyright {
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+
+        @media only screen and (max-width: $bp-phone) {
+            font-size: 2.4rem;
+        }
+    }
+
+    &__paragraph {
+        font-size: 11px; 
+        
+    }
+
+    @media only screen and (max-width: $bp-tab-port) {
+        align-self: center;
+    }
+
+
 }
 
 .attribution a { 
