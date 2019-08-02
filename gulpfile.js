@@ -6,6 +6,28 @@ const sass = require('gulp-sass'),
 postcss = require('gulp-postcss'),
 autoprefixer = require('autoprefixer');
 
+// For deploy
+const imagemin = require('gulp-imagemin'),
+imageminPngquant = require('imagemin-pngquant'),
+imageminJpegRecompress = require('imagemin-jpeg-recompress'),
+del = require('del'),
+usemin = require('gulp-usemin'),
+rev = require('gulp-rev'),
+cssnano = require('gulp-cssnano');
+
+
+// See preview
+function previewDist() {
+  browserSync.init({
+    notify: false,
+    server: {
+      baseDir: 'docs'
+    }
+  });
+}
+exports.previewDist = previewDist;
+
+
 
 function stylesTask() {
   return src('./app/assets/styles/main.scss')
@@ -32,3 +54,37 @@ function watchTask() {
 }
 
 exports.watch = watchTask;
+
+
+
+function imagesTask() {
+  return src('./app/assets/images/**/*.{png,jpeg,jpg,svg,gif}')
+    .pipe(imagemin([
+      imagemin.gifsicle(),
+      imagemin.jpegtran(),
+      imagemin.optipng(),
+      imagemin.svgo(),
+      imageminPngquant(),
+      imageminJpegRecompress()
+    ]))
+    .pipe(dest('./docs/assets/images'));
+}
+exports.imagesTask = imagesTask;
+
+
+
+function clean() {
+  return del(['./docs']);
+}
+
+
+
+function useminTask() {
+  return src('./app/index.html')
+    .pipe(usemin({
+      css: [function() {return rev()}, function() {return cssnano()}]
+    }))
+    .pipe(dest('./docs'));
+}
+
+exports.build = series(clean, imagesTask, stylesTask, useminTask);
