@@ -21,11 +21,15 @@
     }
 
     &--small {
-        padding: 3rem;
+        padding: 1.2rem 2rem 1.5rem;
+        border: none;
         border-radius: 0 5px 5px 0;
         display: inline-block;
         margin: 0;
-        margin-left: -2px;
+        margin-left: -7px;
+        font-weight: bold;
+        font-size: 2.2rem;
+        width: 18%;
     }
     
 }
